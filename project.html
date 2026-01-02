@@ -1,0 +1,42 @@
+<html>
+<div container="container" width="1439" height="1079">
+  <img src="https://imgur.com/sBmdo9z.png" alt="map" usemap="#hakurei-map" width="1439" height="1079" id="img" class="map">
+<script type="text/javascript">
+  $(function() {
+    $('.map').maphilight();
+  });
+</script>
+  <map name="hakurei-map">
+    <area shape="poly" coords="349,1,1004,1,1001,158,667,281,344,172" tabindex="0" href="https://bannedofseven.tumblr.com/mthakurei" class="map">
+    <area shape="poly" coords="507,859,499,995,595,1018,785,1011,1194,978,1167,798,897,797,518,817," tabindex="0" href="https://bannedofseven.tumblr.com/village-bo7"  class="map">
+    <area shape="poly" coords="356,1027,502,1020,496,804,356,805" tabindex="0" href="https://bannedofseven.tumblr.com/bo7grave"  class="map">
+    <area shape="poly" coords="1376,199,1144,199,1142,103,1348,103" tabindex="0" href="https://bannedofseven.tumblr.com/bridge"  class="map">
+  <area shape="poly" coords="1045,208,1315,208,1309,412,1037,410" tabindex="0" href="https://bannedofseven.tumblr.com/hijiri-island"  class="map">
+   <area shape="poly" coords="1149,439,1421,439,1421,514,1151,514" tabindex="0" href="https://bannedofseven.tumblr.com/hijiri-village"  class="map">
+    <area shape="poly" coords="512,235,323,179,1,173,4,322,502,317" tabindex="0" href="https://bannedofseven.tumblr.com/suikotsu-village"  class="map">
+     <area shape="poly" coords="604,508,967,508,1180,727,899,793,647,778,547,634" tabindex="0" href="https://bannedofseven.tumblr.com/temple"  class="map">
+      <area shape="poly" coords="5,349,206,349,257,565,206,658,2,670" tabindex="0" href="https://bannedofseven.tumblr.com/castle"  class="map">
+
+
+
+      </map>
+      </div>
+
+      <p id="coords"></p>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+</html>
+
+<script type="text/javascript">
+var img = document.getElementById('img');
+var coords = document.getElementById('coords');
+img.addEventListener('mousemove', function(event){
+
+  coords.innerHTML = "x: " + event.offsetX + "<br/>y: " + event.offsetY;
+});
+
+
+$(function() {
+    $('.maparea').maphilight();
+});
+</script>
